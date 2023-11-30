@@ -12,6 +12,10 @@
 
 Anylist api
 
+## Environment Variables
+1. Clone the .env.template file and rename it to env.
+2. Change environment variables.
+
 ## Installation
 
 ```bash
