@@ -6,13 +6,13 @@
 logs
 *.log
 npm-debug.log*
+package-lock.json
 pnpm-debug.log*
+pnpm-lock.yaml
 yarn-debug.log*
 yarn-error.log*
-lerna-debug.log*
 yarn.lock
-package-lock.json
-pnpm-lock.yaml
+lerna-debug.log*
 
 # OS
 .DS_Store
@@ -36,3 +36,9 @@ pnpm-lock.yaml
 !.vscode/tasks.json
 !.vscode/launch.json
 !.vscode/extensions.json
+
+# ENVIROMENT
+.env
+
+# DOCKER
+postgres
