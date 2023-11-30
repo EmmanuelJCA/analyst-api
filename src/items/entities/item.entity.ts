@@ -17,6 +17,6 @@ export class Item {
   quantity: number;
 
   @Column()
-  @Field(() => Int)
-  units: number;
+  @Field(() => String)
+  units: string;
 }
