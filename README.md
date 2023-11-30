@@ -16,6 +16,11 @@ Anylist api
 1. Clone the .env.template file and rename it to env.
 2. Change environment variables.
 
+## Lift the database
+```bash
+$ docker-compose up -d
+```
+
 ## Installation
 
 ```bash
