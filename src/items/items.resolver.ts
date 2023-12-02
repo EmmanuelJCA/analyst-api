@@ -16,19 +16,19 @@ export class ItemsResolver {
   }
 
   @Query(() => [Item], { name: 'items' })
-  async findAll(): Promise<Item[]> {
+  findAll(): Promise<Item[]> {
     return this.itemsService.findAll();
   }
 
   @Query(() => Item, { name: 'item' })
-  async findOne(
+  findOne(
     @Args('id', { type: () => ID }, ParseUUIDPipe) id: string,
   ): Promise<Item> {
     return this.itemsService.findOne(id);
   }
 
   @Mutation(() => Item)
-  async updateItem(
+  updateItem(
     @Args('updateItemInput') updateItemInput: UpdateItemInput,
   ): Promise<Item> {
     return this.itemsService.update(updateItemInput.id, updateItemInput);
