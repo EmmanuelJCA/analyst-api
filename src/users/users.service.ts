@@ -38,6 +38,15 @@ export class UsersService {
     return {} as User;
   }
 
+  async findOneByEmail(email: string): Promise<User> {
+    try {
+      return await this.usersRepository.findOneByOrFail({ email });
+    } catch (error) {
+      console.log(error);
+      throw new BadRequestException('Email not found');
+    }
+  }
+
   async update(id: number, updateUserInput: UpdateUserInput): Promise<User> {
     return {} as User;
   }
